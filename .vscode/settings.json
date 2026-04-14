@@ -1,0 +1,6 @@
+{
+    "markdown.marp.themes": [
+        "./themes/marleenkookt.css"
+    ],
+    "markdown.marp.allowLocalFiles": true
+}

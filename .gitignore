@@ -1,0 +1,8 @@
+# Gegenereerde bestanden
+example.html
+
+# macOS
+.DS_Store
+
+# VS Code / Cursor tijdelijke bestanden
+*.code-workspace

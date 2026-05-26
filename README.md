@@ -43,6 +43,16 @@ lang: nl-NL
 
 Zie `example.md` voor een volledig werkend voorbeeld.
 
+### Logo buiten het thema (eigen CSS / `header` in frontmatter)
+
+In het analyse-repo staat het logo op `assets/logo_mk.png`. In een Marp-bestand onder `presentaties/<map>/`:
+
+```yaml
+header: '![h:48](../../assets/logo_mk.png)'
+```
+
+Export met `--allow-local-files` (Marp CLI) of `markdown.marp.allowLocalFiles: true` (Cursor).
+
 ---
 
 ## Slide-stijlen
@@ -163,7 +173,8 @@ mk_marp_theme/
 ├── themes/
 │   └── marleenkookt.css     ← het thema (deel dit bestand)
 ├── assets/
-│   ├── logo_marleenkookt.png        ← volledig logo (voor- en achtergrond referentie)
+│   ├── logo_marleenkookt.png        ← volledig logo (voorblad / referentie)
+│   ├── logo_mk.png                  ← zelfde bestand; canonieke naam in gedeelde_ai_analyses_mk
 │   └── logo_marleenkookt_icon.png   ← icon-only logo (reguliere slides)
 ├── .vscode/
 │   └── settings.json        ← Cursor/VS Code instellingen
